@@ -1,0 +1,16 @@
+name = "leo/on_chain_escrow"
+version = "0.0.0"
+compiler = "v1.1.19"
+plutus = "v3"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'leo/on_chain_escrow'"
+
+[repository]
+user = "leo"
+project = "on_chain_escrow"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "v3.0.0"
+source = "github"
