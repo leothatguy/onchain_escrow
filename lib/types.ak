@@ -4,13 +4,12 @@ pub type EscrowState {
   Locked
 }
 
-
 pub type EscrowDatum {
-    state: EscrowState,
-    payer: VerificationKeyHash,
-    payee: VerificationKeyHash,
-    deadline: Int,
-    amount: Int,
+  state: EscrowState,
+  payer: VerificationKeyHash,
+  payee: VerificationKeyHash,
+  deadline: Int,
+  amount: Int,
 }
 
 pub type EscrowRedeemer {
