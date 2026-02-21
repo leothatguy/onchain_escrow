@@ -31,7 +31,7 @@ fn output_to_pkh(pkh: ByteArray, lovelace: Int) -> Output {
     value: assets.from_lovelace(lovelace),
     datum: NoDatum,
     reference_script: None,
-  }
+  } 
 }
 
 fn paid_to(outputs: List<Output>, pkh: ByteArray) -> Int {

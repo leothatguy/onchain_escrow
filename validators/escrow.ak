@@ -29,8 +29,8 @@ validator escrow_script {
       Release -> {
         expect list.has(self.extra_signatories, datum.payee)
 
-        expect Finite(upper_limit) = self.validity_range.upper_bound.bound_type
-        expect upper_limit < datum.deadline
+        expect Finite(lower_limit) = self.validity_range.lower_bound.bound_type
+        expect lower_limit < datum.deadline
 
         let paid = paid_to(self.outputs, datum.payee)
         expect paid >= datum.amount
