@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { ShieldAlert, Hexagon, Diamond, Lock, CheckCircle2, RotateCcw } from 'lucide-react';
+import { Hexagon, Diamond, Lock, CheckCircle2, RotateCcw } from 'lucide-react';
 
 const WalletConnect = dynamic(() => import('@/components/WalletConnect').then((m) => m.WalletConnect), { ssr: false });
 const CreateEscrowForm = dynamic(() => import('@/components/CreateEscrowForm').then((m) => m.CreateEscrowForm), {
@@ -16,9 +16,8 @@ export default function Home() {
 				<div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 					<div>
 						<h1 className="text-xl font-bold text-gold tracking-tight flex items-center gap-2">
-							<ShieldAlert className="w-5 h-5 text-gold" /> Cardano Escrow
+							Cardano Escrow
 						</h1>
-						<p className="text-xs text-ivory-muted">Plutus V3 · Preprod Testnet</p>
 					</div>
 					<WalletConnect />
 				</div>
@@ -96,7 +95,8 @@ export default function Home() {
 
 				<footer className="mt-16 pb-8 text-center">
 					<p className="text-xs text-ivory-muted">
-						Powered by <span className="text-gold">Aiken</span> ·{' '}
+						<span className="text-gold">leothatguy</span> ·{' '}
+						<span className="text-ivory-dim">Aiken</span> ·{' '}
 						<span className="text-ivory-dim">Lucid Evolution</span> ·{' '}
 						<span className="text-ivory-dim">Cardano Plutus V3</span>
 					</p>
